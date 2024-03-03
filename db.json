@@ -1,0 +1,34 @@
+{
+  "feedback": [
+    {
+      "id": "1",
+      "rating": 5,
+      "text": "This item is from db 1"
+    },
+    {
+      "id": "2",
+      "rating": 1,
+      "text": "This item is from db 2"
+    },
+    {
+      "id": "3",
+      "rating": 8,
+      "text": "This item is from db 3"
+    },
+    {
+      "id": "4",
+      "rating": 3,
+      "text": "This item is from db 4"
+    },
+    {
+      "id": "5",
+      "rating": 7,
+      "text": "This item is from db 5"
+    },
+    {
+      "text": "This item is from db 7",
+      "rating": 7,
+      "id": "644e"
+    }
+  ]
+}

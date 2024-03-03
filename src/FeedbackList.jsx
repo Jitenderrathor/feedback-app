@@ -2,15 +2,16 @@
 import Feedback from "./Feedback"
 import { useContext } from "react"
 import FeedbackContext from "./context/FeedbackContext"
+import Spinner from "./includes/Spinner"
 function FeedbackList() {
-    const {feedback} = useContext(FeedbackContext)
-    if (!feedback || feedback.length === 0) {
+    const {feedback, isLoading} = useContext(FeedbackContext)
+    if (!isLoading && (!feedback || feedback.length === 0)) {
         return <p> No Feedback Yet</p>
     }
     // else{
     //     console.log(feedback);
     // }
-    return <>
+    return isLoading ? <Spinner/>:<>
         <div className="feedback-list">
             {/* <AnimatePresence>
             {feedback.map((item) => (
